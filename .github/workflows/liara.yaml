@@ -16,4 +16,4 @@ jobs:
           LIARA_TOKEN: ${{ secrets.LIARA_API_TOKEN }}
         run: |
           npm i -g @liara/cli@3
-          liara deploy --app="dsl" --api-token="$LIARA_TOKEN" --detach  --platform="docker"  --disks="dslfile:/opt/dsl-parser" --port="8080"  --disks="dslparser:/opt/dsl-parser"
+          liara deploy --app="dsl" --api-token="$LIARA_TOKEN" --detach  --platform="docker"  --disks="dslfile:/opt/dsl-parser" --port="8080"  
